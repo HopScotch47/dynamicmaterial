@@ -1,3 +1,25 @@
 <h1>
   {{title}}
 </h1>
+default<br/>
+<button md-raised-button color="primary">Demo</button>
+<br/>
+Static light
+<div class="unicorn-light-theme">
+  <button md-raised-button color="primary">Demo</button>
+</div>
+<br />
+Static dark
+<div class="unicorn-dark-theme">
+  <button md-raised-button color="primary">Demo</button>
+</div>
+<md-radio-group class="example-radio-group" [(ngModel)]="value">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<br/>
+Dynamic based on radio button
+<div [class]="value">
+  <button md-raised-button color="primary">Demo</button>
+</div>

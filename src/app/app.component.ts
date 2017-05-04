@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  seasons = [
+    'unicorn-light-theme',
+    'unicorn-dark-theme'
+  ];
+  value = 'unicorn-light-theme';
 }
